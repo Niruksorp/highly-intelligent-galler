@@ -14,6 +14,7 @@ public class ProjectVision {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(unique = true, nullable = false)
     private Integer id;
+
     //Техническое видение проекта
     @OneToOne
     @JoinColumn(name = "key_ap")
