@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 @RestController
@@ -19,8 +18,8 @@ public class ProjectController {
         this.repositoryProject = repositoryProject;
     }
 
-    @GetMapping
-    public List<Project> list(Pageable pageable) {
+    @GetMapping()
+    public List<Project> getList() {
         return repositoryProject.findAll();
     }
 
