@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/projects")
-public class ProjectController {
+public class ProjectController implements ProjectControllerInt{
 
     private final RepositoryProject repositoryProject;
 
