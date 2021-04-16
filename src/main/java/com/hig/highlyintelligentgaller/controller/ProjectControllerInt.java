@@ -7,9 +7,9 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
-@Api(description = "Set of endpoints for Creating, Retrieving, Updating and Deleting of Persons.")
+@Api("Set of endpoints for Creating, Retrieving, Updating and Deleting of Persons.")
 public interface ProjectControllerInt {
     @ApiOperation("Returns list of all ShortFormProjectDTO in the system.")
     ResponseEntity<List<ShortFormProjectDTO>> getList();
 
-    }
+}
